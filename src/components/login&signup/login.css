@@ -1,8 +1,12 @@
+.backgroundcolourset{
+  background-color:#E8EAF8 ;
+  height: 100vh; /* or use 100% if it's inside another container */
+}
 .loginbody{
     height: 100%;
     margin: 0;
     font-family: 'Overpass', sans-serif;
-    background-color: #E5E5F7; /* Main background color */
+    background-color:  #E8EAF8/* Main background color */
   }
   .wrapper {
     display: flex;
@@ -26,9 +30,8 @@
     color: #5F616E; /* The main title color */
     margin: 0 0 10px 0; /* Adjust spacing below the main title */
     font-weight: 500;
-    font-size: 2.2em; /* Larger font size for the main title */
-    margin-bottom: 0.5em; 
-    margin-top: 70px;
+    font-size: 2.3em; /* Larger font size for the main title */
+    margin-bottom: 0.4em; 
 }
 
 .content-section .second{
@@ -36,7 +39,7 @@
     font-weight: 500;
     font-size: 2.2em; /* Larger font size for the subtitle */
     margin-top: -20px; /* Adjust spacing above the subtitle */
-    margin-bottom: 0.5em; 
+    margin-bottom: 0.6em; 
 }
   .content-section img {
     width: 77%; /* Adjust width as necessary */
@@ -61,25 +64,27 @@
     padding: 2rem;
     border-radius: 10px;
     width: 100%; /* Adjust width as needed */
-    max-width: 300px; /* Maximum width of the form */
+    max-width: 370px; /* Maximum width of the form */
+    height: 100%; /* Adjust width as needed */
+    max-height: 390px; /* Maximum width of the form */
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   }
   .login-header {
     text-align: center;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.7rem;
   }
   .login-header .nessco {
     color: #7652DC; /* Purple color for the header */
     font-weight: 700; /* Overpass bold for 'Nessco' */
-    font-size: 1.3rem;
-    margin-right: -10px;
+    font-size: 1.35rem;
+    margin-right: -13px;
     
   }
   .login-header .expenses {
     font-family: 'Mistral', cursive; /* Use Pacifico as similar to Mistral */
     color: #7652DC; /* Darker purple for 'Expenses' */
-    font-size: 3rem; /* Larger size for the 'Expenses' part */
-    font-weight:250;
+    font-size: 3.5rem; /* Larger size for the 'Expenses' part */
+    font-weight:500;
     display: block; /* or inline-block, depending on your layout */
     margin-top: -20px; 
   }
@@ -94,19 +99,20 @@
   right: 0; /* Align to the right */
   bottom: 0; /* Position at the bottom of the input-group */
   font-size: 0.9em; /* Smaller font size for the link */
+  margin-bottom: -10px;
 }
 
 .forgot-password-link:hover {
   text-decoration: underline; /* Underline on hover */
 }
   .form-input {
-    width: 91%;
+    width: 93%;
     padding: 0.75rem;
     margin-bottom: 1rem;
     border: 1px solid #ccc;
     border-radius: 20px;
     background-color:  #E8EAF8; /* White background for input */
-    margin-bottom: 0px;
+    margin-bottom: -6px;
   }
   .login-btn {
     padding: 10px 20px;
@@ -120,10 +126,12 @@
     text-align: center;
     display: block; /* Make the button block level for full width */
     width: 100%;
+    padding-top: -200px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
     margin-bottom: 1rem; /* Space before the forgotten password link */
     transition: background-image 0.3s ease;
   }
+
   .login-btn:hover {
     background-image: linear-gradient(to left, #7652DC, #6049CD);
   }
@@ -146,7 +154,7 @@
   .signup-text a {
     color:  #7652DC;
     text-decoration: none;
-    font-weight: 700;
+    font-weight: 500;
   }
   .signup-text a:hover {
     text-decoration: underline;
@@ -195,7 +203,7 @@
     align-items: center;
   }
   .login-container {
-    width: 90%; /* Most of the screen width for mobile */
+    width: 120%; /* Most of the screen width for mobile */
   }
   /* Adjust font sizes and other styles for mobile view */
   .login-header .nessco, .login-header .expenses {
@@ -206,10 +214,25 @@
     font-size: 0.9rem;
   }
   .signup-text {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
   }
 }
 .referpart {
   color: #5F616E;
   font-size: 14px;
 }
+
+@media only screen and (max-width: 768px) { /* For tablets */
+  .backgroundcolourset {
+    background-color: #E8EAF8;
+    height: 100vh; /* or use 100% if it's inside another container */
+  }
+}
+
+@media only screen and (max-width: 480px) { /* For mobile phones */
+  .backgroundcolourset {
+    background-color: #E8EAF8;
+    height: 100vh; /* or use 100% if it's inside another container */
+  }
+}
+

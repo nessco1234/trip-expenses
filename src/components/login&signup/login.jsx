@@ -4,6 +4,7 @@ import loginImage from '../../image/Login Page Image.svg'; // Adjust the path to
 
 function Login() {
   return (
+    <div className='backgroundcolourset'>
     <div className='loginbody'>
     <div className="wrapper">
       <div className="content-section">
@@ -26,7 +27,11 @@ function Login() {
               <input type="password" className="form-input" placeholder="Password" required />
               <a href="#" className="forgot-password-link">Forgotten password?</a>
             </div>
+            <br/>
+            <div className="loginadject">
             <button type="submit" className="login-btn">Log In</button>
+            </div>
+            <br/>
             <hr />
             <div className="signup-text">
               <span className="referpart">Don't have an account?</span>
@@ -35,6 +40,7 @@ function Login() {
           </form>
         </div>
       </div>
+    </div>
     </div>
     </div>
   );
