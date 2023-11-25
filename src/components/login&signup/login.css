@@ -1,0 +1,215 @@
+.loginbody{
+    height: 100%;
+    margin: 0;
+    font-family: 'Overpass', sans-serif;
+    background-color: #E5E5F7; /* Main background color */
+  }
+  .wrapper {
+    display: flex;
+    height: 100%;
+    margin-left: 16px;
+  }
+  .content-section {
+    flex: 1;
+    /* background: url('path-to-your-left-background-image.jpg') no-repeat center center; */
+    background-size: cover; /* You can adjust this as per your image's aspect ratio */
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+    color: #333;
+    text-align: left;
+    padding: 100px;
+    box-sizing: border-box;
+  }
+  .content-section .first {
+    color: #5F616E; /* The main title color */
+    margin: 0 0 10px 0; /* Adjust spacing below the main title */
+    font-weight: 500;
+    font-size: 2.2em; /* Larger font size for the main title */
+    margin-bottom: 0.5em; 
+    margin-top: 70px;
+}
+
+.content-section .second{
+    color: #6049CD; /* The subtitle color */
+    font-weight: 500;
+    font-size: 2.2em; /* Larger font size for the subtitle */
+    margin-top: -20px; /* Adjust spacing above the subtitle */
+    margin-bottom: 0.5em; 
+}
+  .content-section img {
+    width: 77%; /* Adjust width as necessary */
+    height: auto; /* Adjust height as necessary */
+    max-width: 800px; /* Adjust max-width as necessary */
+    padding-bottom: 30px;
+    display: block; /* ensures the image does not have extra space due to inline display */
+    margin-top: -20px;
+    margin-left: -20px;
+  }
+  /* Add additional styling for SVG or other elements in the content section here */
+  .login-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    box-sizing: border-box;
+  }
+  .login-container {
+    background: #FFFFFF;
+    padding: 2rem;
+    border-radius: 10px;
+    width: 100%; /* Adjust width as needed */
+    max-width: 300px; /* Maximum width of the form */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  .login-header {
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+  .login-header .nessco {
+    color: #7652DC; /* Purple color for the header */
+    font-weight: 700; /* Overpass bold for 'Nessco' */
+    font-size: 1.3rem;
+    margin-right: -10px;
+    
+  }
+  .login-header .expenses {
+    font-family: 'Mistral', cursive; /* Use Pacifico as similar to Mistral */
+    color: #7652DC; /* Darker purple for 'Expenses' */
+    font-size: 3rem; /* Larger size for the 'Expenses' part */
+    font-weight:250;
+    display: block; /* or inline-block, depending on your layout */
+    margin-top: -20px; 
+  }
+  .input-group {
+  position: relative;
+  padding-bottom: 25px;
+}
+.forgot-password-link {
+  color: #7652DC; /* Color for the link */
+  text-decoration: none; /* No underline by default */
+  position: absolute;
+  right: 0; /* Align to the right */
+  bottom: 0; /* Position at the bottom of the input-group */
+  font-size: 0.9em; /* Smaller font size for the link */
+}
+
+.forgot-password-link:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+  .form-input {
+    width: 91%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    background-color:  #E8EAF8; /* White background for input */
+    margin-bottom: 0px;
+  }
+  .login-btn {
+    padding: 10px 20px;
+    border: none;
+    background-image: linear-gradient(to right, #7652DC, #6049CD);
+    color: white;
+    font-size: 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    outline: none;
+    text-align: center;
+    display: block; /* Make the button block level for full width */
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    margin-bottom: 1rem; /* Space before the forgotten password link */
+    transition: background-image 0.3s ease;
+  }
+  .login-btn:hover {
+    background-image: linear-gradient(to left, #7652DC, #6049CD);
+  }
+  .alternative-login {
+    text-align: center;
+    margin-top: 20px;
+  }
+  .alternative-login button {
+    background: none;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    color: #503291; /* Similar purple color */
+  }
+  .signup-text {
+    text-align: center;
+    margin-top: 20px;
+    color:  #7652DC; /* Similar purple color */
+  }
+  .signup-text a {
+    color:  #7652DC;
+    text-decoration: none;
+    font-weight: 700;
+  }
+  .signup-text a:hover {
+    text-decoration: underline;
+  }
+  /* Placeholder styling */
+  ::placeholder {
+    color: #5F616E;
+  }
+
+  /* Add responsive styles for tablet devices */
+@media screen and (max-width: 1024px) {
+  /* Hide the content section and adjust the login section for tablet view */
+  .content-section {
+    display: none;
+  }
+  .login-section {
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+  }
+  .login-container {
+    width: 80%; /* Slightly larger for tablet screens */
+  }
+  /* Adjust font sizes and other styles for tablet view */
+  .login-header .nessco, .login-header .expenses {
+    font-size: 2.5rem;
+  }
+  .form-input, .login-btn {
+    padding: 15px;
+    font-size: 1rem;
+  }
+  .signup-text {
+    font-size: 1rem;
+  }
+}
+
+/* Add responsive styles for mobile devices */
+@media screen and (max-width: 768px) {
+  /* Hide the content section and adjust the login section for mobile view */
+  .content-section {
+    display: none;
+  }
+  .login-section {
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+  }
+  .login-container {
+    width: 90%; /* Most of the screen width for mobile */
+  }
+  /* Adjust font sizes and other styles for mobile view */
+  .login-header .nessco, .login-header .expenses {
+    font-size: 2.5rem;
+  }
+  .form-input, .login-btn {
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+  .signup-text {
+    font-size: 0.9rem;
+  }
+}
+.referpart {
+  color: #5F616E;
+  font-size: 14px;
+}
